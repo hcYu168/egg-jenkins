@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  nodejs:
+    build:                          # 这里指的是我们刚刚撸的 Dockerfile 文件
+      context: .                    
+      dockerfile: Dockerfile
+    image: nodejs                   # 镜像名称
+    container_name: nodejs          # 容器名称
+    restart: always                 # 重启方式
+    # depends_on:                     # 启动顺序
+    #  - santak_redis
+    #  - santak_mysql
+    # links:                          # 容器连接
+    #  - santak_redis:santak_redis
+    #  - santak_mysql:santak_mysql
+    #networks:                       # 加入指定网络
+    #  - app-network
+
+#volumes:
+ # certbot-etc:
+ # certbot-var:
