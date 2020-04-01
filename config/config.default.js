@@ -23,6 +23,13 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  // 安全配置
+  config.security = {
+    domainWhiteList: [],
+    csrf: {
+      enable: false,
+    },
+  };
   return {
     ...config,
     ...userConfig,
