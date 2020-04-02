@@ -5,11 +5,11 @@ const Controller = require('egg').Controller;
 class HomeController extends Controller {
   async index() {
     const { ctx } = this;
-    console.log('test webhook6');
+    console.log('test webhook7');
     ctx.body = {
       code: 200,
       data: {
-        msg: 'hi, egg'
+        msg: 'hi, egg',
       },
     };
   }
