@@ -5,7 +5,7 @@ const Controller = require('egg').Controller;
 class HomeController extends Controller {
   async index() {
     const { ctx } = this;
-    console.log('test webhook9');
+    console.log('test webhook10');
     ctx.body = {
       code: 200,
       data: {
