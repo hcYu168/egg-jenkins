@@ -2,7 +2,8 @@
 const Controller = require('egg').Controller;
 class TestController extends Controller {
   async index() {
-    this.ctx.body = 200;
+    const { ctx, service } = this;
+    ctx.body = await service.test.index();
   }
 }
 module.exports = TestController;
