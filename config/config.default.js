@@ -20,7 +20,7 @@ module.exports = appInfo => {
 
   // add your user config here
   const userConfig = {
-    name: 'test',
+    name: 'test2',
   };
 
   // 安全配置
